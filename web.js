@@ -6,7 +6,9 @@ var app = express();
 app.use(logfmt.requestLogger());
 
 app.get('/', function(req, res) {
-    res.redirect('http://ripdeckapp.com/workout');
+    var name = 'Random Workout';
+    var query = '?n=' + name;
+    res.redirect('http://ripdeckapp.com/workout/'+query);
 });
 
 var port = Number(process.env.PORT || 5000);
