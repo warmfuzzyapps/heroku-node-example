@@ -16,16 +16,15 @@ var exercises = [
     'Leg Lifts',
 ];
 
-var shuffled = shuffle(exercises);
-var clubs = shuffled[0];
-var diamonds = shuffled[1];
-var hearts = shuffled[2];
-var spades = shuffled[3];
-var joker = shuffled[4];
-
 app.use(logfmt.requestLogger());
 
 app.get('/', function(req, res) {
+    var shuffled = shuffle(exercises);
+    var clubs = shuffled[0];
+    var diamonds = shuffled[1];
+    var hearts = shuffled[2];
+    var spades = shuffled[3];
+    var joker = shuffled[4];
     var name = 'Random Workout';
     var query = 
         '?n=' + name + 
