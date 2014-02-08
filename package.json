@@ -1,0 +1,23 @@
+{
+  "name": "heroku-node-example",
+  "version": "0.0.0",
+  "description": "Example node app on Heroku",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warmfuzzyapps/heroku-node-example.git"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "warmfuzzyapps",
+  "license": "MIT",
+  "dependencies": {
+    "logfmt": "~0.20.0",
+    "express": "~3.4.8"
+  }
+}
