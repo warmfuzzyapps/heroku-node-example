@@ -3,41 +3,7 @@ var express = require("express");
 var logfmt = require("logfmt");
 var app = express();
 
-var exercises = [
-    'Push-ups',
-    'Sit-ups',
-    'Jumping Jacks',
-    'Mountain Climbers',
-    'Burpees',
-    'Pull-ups',
-    'Squats',
-    'Bicycle Crunches',
-    'Tricep Dips',
-    'Leg Lifts',
-    'Lunges',
-    'V-ups',
-    'Supermans',
-    'Scissor Kicks',
-    'Russian Twists',
-    'Jump Squats',
-    'Star Jumps',
-    'Box Jumps',
-    'Squat Jumps',
-    'High Knees',
-    'Frog Jump',
-    'Up Downs',
-    'Bear Crawls',
-    'Plank Jacks',
-    'Jumping Lunges',
-    'Tuck Jumps',
-    'Walking Push-ups',
-    'Hindu Push-ups',
-    'Inch Worms',
-    'Side Lunges',
-    'Curtsy Lunges',
-    'Reverse Lunges',
-    'Donkey Kickbacks',
-];
+var exercises = require('./exercises.json');
 
 app.use(logfmt.requestLogger());
 
