@@ -1,7 +1,7 @@
 {
-  "name": "heroku-node-example",
-  "version": "0.0.0",
-  "description": "Example node app on Heroku",
+  "name": "RipDeckRandomWorkout",
+  "version": "0.0.1",
+  "description": "Generate a random RipDeck workout.",
   "main": "web.js",
   "engines": {
     "node": "0.10.24"
@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/warmfuzzyapps/heroku-node-example.git"
+    "url": "https://github.com/warmfuzzyapps/RipDeckRandomWorkout.git"
   },
   "keywords": [
-    "example",
-    "heroku"
+    "RipDeck",
+    "workout"
   ],
   "author": "warmfuzzyapps",
   "license": "MIT",
