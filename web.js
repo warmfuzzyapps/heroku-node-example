@@ -22,6 +22,16 @@ app.get('/', function(req, res) {
         '&h=' + hearts + 
         '&s=' + spades + 
         '&j=' + joker;
+
+    logfmt.log({
+        'app': 'randomworkout',
+        'c': clubs,
+        'd': diamonds,
+        'h': hearts,
+        's': spades,
+        'j': joker
+    });
+
     res.redirect('http://ripdeckapp.com/workout/'+query);
 });
 
