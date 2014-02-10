@@ -9,30 +9,20 @@ app.use(logfmt.requestLogger());
 
 app.get('/', function(req, res) {
     var shuffled = shuffle(exercises);
-    var clubs = shuffled[0];
-    var diamonds = shuffled[1];
-    var hearts = shuffled[2];
-    var spades = shuffled[3];
-    var joker = shuffled[4];
-    var name = 'Random Workout';
-    var query = 
-        '?n=' + name + 
-        '&c=' + clubs + 
-        '&d=' + diamonds + 
-        '&h=' + hearts + 
-        '&s=' + spades + 
-        '&j=' + joker;
+    var workout = {
+        n: 'Random Workout',
+        c: shuffled[0],
+        d: shuffled[1],
+        h: shuffled[2],
+        s: shuffled[3],
+        j: shuffled[4]
+    };
 
-    logfmt.log({
-        'app': 'randomworkout',
-        'c': clubs,
-        'd': diamonds,
-        'h': hearts,
-        's': spades,
-        'j': joker
-    });
+    var query = querystring.stringify(workout);
 
-    res.redirect('http://ripdeckapp.com/workout/'+query);
+    logfmt.log(workout);
+
+    res.redirect('http://ripdeckapp.com/workout/?'+query);
 });
 
 var port = Number(process.env.PORT || 5000);
