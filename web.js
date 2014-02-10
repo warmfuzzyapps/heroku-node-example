@@ -1,6 +1,8 @@
 // web.js
 var express = require("express");
 var logfmt = require("logfmt");
+var querystring = require('querystring');
+
 var app = express();
 
 var exercises = require('./exercises.json');
