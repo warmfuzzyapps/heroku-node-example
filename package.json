@@ -1,10 +1,10 @@
 {
   "name": "RipDeckRandomWorkout",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate a random RipDeck workout.",
   "main": "web.js",
   "engines": {
-    "node": "0.10.24"
+    "node": "0.10.26"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,7 +20,7 @@
   "author": "warmfuzzyapps",
   "license": "MIT",
   "dependencies": {
-    "logfmt": "~0.20.0",
-    "express": "~3.4.8"
+    "logfmt": "~1.1.2",
+    "express": "~4.1.1"
   }
 }

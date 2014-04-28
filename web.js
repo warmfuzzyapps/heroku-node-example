@@ -35,9 +35,7 @@ app.listen(port, function() {
  * http://en.wikipedia.org/wiki/Fisher–Yates_shuffle
  */
 function shuffle(array) {
-  var m = array.length, 
-      t, 
-      i;
+  var m = array.length, t, i;
 
   // While there remain elements to shuffle…
   while (m) {
